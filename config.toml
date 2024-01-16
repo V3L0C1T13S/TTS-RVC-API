@@ -1,6 +1,6 @@
 [rvc]
 # path of directory containing RVC v2 voice models
-model_dir = "/run/media/john/4tb_seagate/Software/TTS-RVC-API/models"
+model_dir = "./models"
 
 # Map the bark voice to your RVC models
 #[rvc.bark_voice_map]
@@ -10,4 +10,4 @@ model_dir = "/run/media/john/4tb_seagate/Software/TTS-RVC-API/models"
 [tts]
 # path of directory where tts audio output will be saved
 # Always saves to path "<output_dir>/bark_out.wav" so overwritten for each generation
-output_dir = "/run/media/john/4tb_seagate/Software/TTS-RVC-API/tmp"
+output_dir = "./tmp"
