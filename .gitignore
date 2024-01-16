@@ -5,5 +5,11 @@ __pycache__/
 
 .venv
 
+pipcache/
+tmp/
+
 # models
-models/*/*.pt
+models/
+!models/speaker1
+!models/speaker2
+!models/speaker3

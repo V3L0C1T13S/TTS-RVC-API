@@ -68,11 +68,14 @@ def server(
         
         get_vc(rvc_speaker_id, rvc_model_dir, 0.33, 0.5)
         
+        # TODO: make this configurable in request body
+        f0_up_key = 0
+        pitchf = 2 * 2 ** (f0_up_key / 12)
         rvc_index = os.path.join(rvc_model_dir, rvc_speakers[speaker_name]["index"])
         wav_opt = vc_single(
             0, 
             tts_file,
-            0, 
+            pitchf, 
             None, 
             "pm", 
             rvc_index,
